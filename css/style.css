@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7C8F4C;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+.nav {
+    list-style-type: none;
+    background-color: #ACB984;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.nav li {
+    margin: 0 1em;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active a {
+    background-color: #7c8f4c; /* Corrected color code */
+    color: black;
+}
+
+/* Hero Section */
+.whitleyfont {
+    font-family: "curve", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1em 0;
+    color: #000000;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: #596D22;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Section Layouts */
+.reed-section {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.cameron-section {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+}
+
+.whitley-section {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.link-section {
+    grid-column: 3 / span 3;
+    grid-row: 4;   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .reed-section, .cameron-section, .whitley-section {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Carousel Images */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.grid-container img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+/* Order Button Styles */
+.order-button {
+    padding: 10px 20px;
+    background-color: #596D22 !important; /* Custom green */
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.order-button:hover {
+    background-color: #4e5f1c !important; /* Darker green on hover */
+}
