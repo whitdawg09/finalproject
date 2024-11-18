@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="https://use.typekit.net/geo8vfc.css">
     <link rel="stylesheet" href="https://use.typekit.net/geo8vfc.css">
     <link rel="stylesheet" href="https://use.typekit.net/geo8vfc.css">
@@ -30,11 +30,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="menu.html">Menu</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="history.html">History</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Reviews</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact2.html">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
@@ -43,46 +46,29 @@
                             Order Food
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact2.html">Contact</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="whitley-section grid-item">
-            <img src="images/historyphoto.jfif" height="350px" width="550px">
-            <img src="images/people.jpg" height="350px" width="550px">
-        </div>
-    </div>
-
-    <div class="grid-container mt-4">
-        <div class="reed-section grid-item">
-            <p class="font3">Fun facts!</p>
-            <li class="font2">The walls of the deli are adorned with photos, notes, and memorabilia from customers, including celebrities and visitors who have fallen in love with its charm.</li>
-           <br>
-            <li class="font2">The deli’s famous Giugni Juice is a secret family recipe that has remained unchanged for decades. It's so popular that many customers buy bottles of it to take home.</li>
-           <br>
-            <li class="font2">The Giugni family has been actively involved in running the deli for over 100 years, with recipes and traditions passed down through generations.</li>
-        </div>
-
-        <div class="cameron-section grid-item">
-            <p class="font3">1918-2024!</p>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
             
-            <p class="font2">Giugni's Deli, located in St. Helena, California, has a rich history rooted in family and tradition. Established by the Giugni family, the deli began as a small grocery store serving the local community. Over the years, it evolved into the beloved sandwich shop it is today, known for its fresh ingredients and signature "Giugni Juice."  
-
-                The deli has remained a family-run business for generations, maintaining its original charm and commitment to quality. Its longstanding presence in the heart of Napa Valley has made it a cherished institution, drawing both locals and visitors who come to experience a piece of culinary history. Giugni’s blend of tradition and timeless recipes keeps its legacy alive, making it a staple in St. Helena for over a century.</p>
-               
-        </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formOutput" style="margin-top: 10px; color: green;"></p>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <footer style="background-color: #f8f9fa; text-align: center; padding: 10px; font-size: 12px; color: #333; border-top: 1px solid #ddd;">
         <p style="margin: 5px 0;"><strong> Giugini's Deli</strong></p>
         <p style="margin: 5px 0;">1227 Main St, Saint Helena, Ca 94574</p>
         <p style="margin: 5px 0;">Phone: (707) 963-3421 </p>
       </footer>
-</body>
-
-</html>
+    </body>
